@@ -1,0 +1,41 @@
+header #title {
+  padding: 3px;
+  text-align: center;
+  background: #e75480;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin-bottom: 80px;
+    box-shadow:  5px 5px 5px 5px #ddd;
+    width: 17%;
+}
+
+legend.scheduler-border {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+}
+
+.btn-long {
+  border: none;
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  font-size: 30px;
+  color: black;
+}
+
+.display-1 {
+  margin-bottom: 50px;
+}

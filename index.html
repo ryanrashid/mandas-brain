@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How Amanda Makes Decisions</title>
+    <link rel="stylesheet" type="text/css"
+          href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" href="https://icon-library.com/images/452640.svg.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<header>
+  <div id="title">
+    <h1>Amanda's Prefrontal Cortex</h1>
+  </div>
+</header>
+<body style="background: #FFC0CB;">
+  <div id="opt-select" style="text-align: center;">
+    <h1 class="display-1">Because thinking is hard</h1>
+    <button type="button" onclick="displayOptions(2)" style="background: #ff859a;" class="btn-long">Two</button>
+    <button type="button" onclick="displayOptions(3)" style="background: #ff5e7a;" class="btn-long">Three</button>
+    <button type="button" onclick="displayOptions(4)" style="background: #ff728a;" class="btn-long">Four</button>
+    <button type="button" onclick="displayOptions(5)" style="background: #ff4a6a;" class="btn-long">Five</button>
+    <button type="button" onclick="displayOptions(6)" style="background: #ff748c;" class="btn-long">Six</button>
+  </div>
+  <div id="options" style="display: none;">
+    <fieldset id="opt1" class="scheduler-border">
+      <legend class="scheduler-border">Option 1</legend>
+      <input type="text" id="first" placeholder="Enter your dilemma" required>
+    </fieldset>
+    <fieldset id="opt2" class="scheduler-border">
+      <legend class="scheduler-border">Option 2</legend>
+      <input type="text" id="second" placeholder="Enter your dilemma" required>
+    </fieldset>
+    <fieldset id="opt3" style="display: none;" class="scheduler-border">
+      <legend class="scheduler-border">Option 3</legend>
+      <input type="text" id="third" placeholder="Enter your dilemma" required>
+    </fieldset>
+    <fieldset id="opt4" style="display: none;" class="scheduler-border">
+      <legend class="scheduler-border">Option 4</legend>
+      <input type="text" id="fourth" placeholder="Enter your dilemma" required>
+    </fieldset>
+    <fieldset id="opt5" style="display: none;" class="scheduler-border">
+      <legend class="scheduler-border">Option 5</legend>
+      <input type="text" id="fifth" placeholder="Enter your dilemma" required>
+    </fieldset>
+    <fieldset id="opt6" style="display: none;" class="scheduler-border">
+      <legend class="scheduler-border">Option 6</legend>
+      <input type="text" id="sixth" placeholder="Enter your dilemma" required>
+    </fieldset>
+  </div>
+</body>
+</html>
