@@ -1,2 +1,2 @@
-# mandas-prefrontal-cortex
-A simple web app to help Amanda make basic decisions
+# mandas-brain
+A simple web application to help Amanda make daily life decisions

@@ -5,3 +5,8 @@ function displayOptions(num) {
     document.getElementById("opt" + i).style.display = "block";
   }
 }
+
+function pickOption() {
+    alert('Form submitted!');
+    return false;
+}
