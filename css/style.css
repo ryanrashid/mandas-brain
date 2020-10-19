@@ -9,12 +9,14 @@ header #title {
 }
 
 fieldset.scheduler-border {
-    border: 1px groove #ddd !important;
-    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    border-radius: 8px;
     padding: 0 1.4em 1.4em 1.4em !important;
-    margin-bottom: 80px;
-    box-shadow:  5px 5px 5px 5px #ddd;
-    width: 17%;
+    margin: 10px 100px 70px 100px;
+    box-shadow:  2px 2px 2px 2px black;
+    width: 25%;
+    height: 210px;
 }
 
 legend.scheduler-border {
@@ -22,9 +24,9 @@ legend.scheduler-border {
     font-size: 18px !important;
     font-weight: bold !important;
     text-align: left !important;
-    width:auto;
-    padding:0 10px;
-    border-bottom:none;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
 }
 
 .block {
