@@ -89,5 +89,6 @@ fieldset.scheduler-border input[type=text] {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }

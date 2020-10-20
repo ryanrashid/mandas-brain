@@ -27,11 +27,11 @@ function pickOption() {
     }
     var bestOption = options[Math.floor(Math.random() * options.length)];
     var res = document.getElementById("result");
-    document.getElementById("wtf").remove();
+    document.getElementById("answer").remove();
     document.getElementById("options").style.display = "none";
     res.style.display = "block";
     var h = document.createElement("h1");
-    h.id = "wtf";
+    h.id = "answer";
     h.className = "display-3";
     h.appendChild(document.createTextNode(bestOption));
     res.appendChild(h);
