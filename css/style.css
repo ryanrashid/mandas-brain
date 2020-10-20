@@ -1,11 +1,33 @@
+img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+header#topbar {
+  display: flex;
+  margin-bottom: 40px;
+  text-align: center;
+  color: black;
+}
+
 header #title {
   padding: 3px;
-  text-align: center;
   background: #e75480;
   width: 100%;
-  color: black;
   font-size: 20px;
-  margin-bottom: 40px;
+}
+
+header #home {
+  background: #e75480;
+  width: 10% !important;
+  position: fixed;
+  padding: 10px;
+}
+
+header #home:hover {
+    background: #d11d53;
+    cursor: pointer;
 }
 
 fieldset.scheduler-border {
@@ -13,15 +35,15 @@ fieldset.scheduler-border {
     display: inline-block;
     border-radius: 8px;
     padding: 0 1.4em 1.4em 1.4em !important;
-    margin: 10px 100px 70px 100px;
-    box-shadow:  2px 2px 2px 2px black;
+    margin: 10px 100px 60px 100px;
+    box-shadow:  2px 2px 2px 0px black;
     width: 25%;
-    height: 210px;
+    min-width: 350px;
 }
 
 legend.scheduler-border {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px !important;
+    font-size: 25px !important;
     font-weight: bold !important;
     text-align: left !important;
     width: auto;
@@ -29,16 +51,11 @@ legend.scheduler-border {
     border-bottom: none;
 }
 
-.block {
-    display: block;
-    width: 85.5%;
-    border: none;
-    background-color: #e75480;
-    padding: 14px 28px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    font-size: 22px;
-    text-align: center;
+fieldset.scheduler-border input[type=text] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  font: 'Roboto';
 }
 
 .btn-long {

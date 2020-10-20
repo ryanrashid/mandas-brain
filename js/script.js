@@ -12,10 +12,20 @@ function displayOptions(num) {
   for (var i = 1; i <= num; i++) {
     document.getElementById("opt" + i).style.display = "inline-block";
     document.getElementById("opt" + i).style.height = size;
+    document.getElementById("opt" + i).disabled = false;
   }
 }
 
 function pickOption() {
-    alert('Form submitted!');
-    return false;
+    var ids = ["first", "second", "third", "fourth", "fifth", "sixth"];
+    var options = [];
+    for (var i = 1; i <= 6; i++) {
+      if (document.getElementById("opt" + i).style.display == "none") {
+        break;
+      }
+      options.push(document.getElementById(ids[i-1]).value);
+    }
+    var bestOption = options[Math.floor(Math.random() * options.length)];
+    alert(bestOption);
+    return bestOption;
 }

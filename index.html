@@ -6,11 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="icon" href="https://icon-library.com/images/452640.svg.svg">
+    <link rel="icon" href="images/unicorn.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
-<header>
+<header id="topbar">
+  <div id="home" onclick="location.reload();">
+    <input type="image" width="41%" src="images/oops.png"/>
+  </div>
   <div id="title">
     <h1>Amanda's Prefrontal Cortex</h1>
   </div>
@@ -25,9 +28,10 @@
     <button type="button" onclick="displayOptions(6)" style="background: #ff748c;" class="btn-long">Six</button>
   </div>
   <div id="options" style="text-align: center; display: none;">
+    <form id="myoptions" onsubmit="pickOption();">
     <fieldset id="opt1" style="background-color: #ffb12a" class="scheduler-border">
       <legend class="scheduler-border">Option 1</legend>
-      <input type="text" id="first" placeholder="Enter your dilemma" autofocus required>
+      <input type="text" id="first" placeholder="Enter your dilemma" required>
     </fieldset>
 
     <fieldset id="opt2" style="background-color: #fbec5d" class="scheduler-border">
@@ -35,28 +39,26 @@
       <input type="text" id="second" placeholder="Enter your dilemma" required>
     </fieldset>
 
-    <fieldset id="opt3" style="background-color: #d9e650; display: none;" class="scheduler-border">
+    <fieldset disabled id="opt3" style="background-color: #d9e650; display: none;" class="scheduler-border">
       <legend class="scheduler-border">Option 3</legend>
       <input type="text" id="third" placeholder="Enter your dilemma" required>
     </fieldset>
 
-    <fieldset id="opt4" style="background-color: #afeeee; display: none;" class="scheduler-border">
+    <fieldset disabled id="opt4" style="background-color: #afeeee; display: none;" class="scheduler-border">
       <legend class="scheduler-border">Option 4</legend>
       <input type="text" id="fourth" placeholder="Enter your dilemma" required>
     </fieldset>
 
-    <fieldset id="opt5" style="background-color: #cda4de; display: none;" class="scheduler-border">
+    <fieldset disabled id="opt5" style="background-color: #cda4de; display: none;" class="scheduler-border">
       <legend class="scheduler-border">Option 5</legend>
       <input type="text" id="fifth" placeholder="Enter your dilemma" required>
     </fieldset>
 
-    <fieldset id="opt6" style="background-color: #f08080; display: none;" class="scheduler-border">
+    <fieldset disabled id="opt6" style="background-color: #f08080; display: none;" class="scheduler-border">
       <legend class="scheduler-border">Option 6</legend>
       <input type="text" id="sixth" placeholder="Enter your dilemma" required>
     </fieldset>
-
-    <form onsubmit="pickOption()">
-      <input class='block' type="submit" value="Tell me what to do!">
+    <input class="btn-long" style="background-color: #e75480" type="submit" value="Tell me what to do!">
     </form>
   </div>
 </body>
