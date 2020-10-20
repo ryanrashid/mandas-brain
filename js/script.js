@@ -16,16 +16,23 @@ function displayOptions(num) {
   }
 }
 
+var ids = ["first", "second", "third", "fourth", "fifth", "sixth"];
 function pickOption() {
-    var ids = ["first", "second", "third", "fourth", "fifth", "sixth"];
     var options = [];
     for (var i = 1; i <= 6; i++) {
       if (document.getElementById("opt" + i).style.display == "none") {
         break;
       }
-      options.push(document.getElementById(ids[i-1]).value);
+      options.push(document.getElementById(ids[i - 1]).value);
     }
     var bestOption = options[Math.floor(Math.random() * options.length)];
-    alert(bestOption);
-    return bestOption;
+    var res = document.getElementById("result");
+    document.getElementById("wtf").remove();
+    document.getElementById("options").style.display = "none";
+    res.style.display = "block";
+    var h = document.createElement("h1");
+    h.id = "wtf";
+    h.className = "display-3";
+    h.appendChild(document.createTextNode(bestOption));
+    res.appendChild(h);
 }

@@ -9,17 +9,16 @@ header#topbar {
   margin-bottom: 40px;
   text-align: center;
   color: black;
+  background: #e75480;
 }
 
 header #title {
   padding: 3px;
-  background: #e75480;
   width: 100%;
   font-size: 20px;
 }
 
 header #home {
-  background: #e75480;
   width: 10% !important;
   position: fixed;
   padding: 10px;
@@ -58,9 +57,16 @@ fieldset.scheduler-border input[type=text] {
   font: 'Roboto';
 }
 
+#reroll {
+  position: fixed;
+  width: 7.5%;
+  bottom: 0;
+  right: 0;
+}
+
 .btn-long {
   border: none;
-  width: 90%;
+  width: 80%;
   padding: 20px;
   margin-bottom: 12px;
   border-radius: 15px;
@@ -70,4 +76,18 @@ fieldset.scheduler-border input[type=text] {
 
 .display-1 {
   margin-bottom: 50px;
+}
+
+.display-2 {
+  font-size: 120px;
+  text-align: center;
+}
+
+.display-3 {
+  font-size: 150px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 100px;
 }
